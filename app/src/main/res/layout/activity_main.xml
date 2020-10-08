@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DadosActivity">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome :"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNome"
+        android:layout_below="@id/txtNome"
+        android:layout_alignLeft="@id/txtNome"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:text="Idade :"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/edtNome"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:maxLength="3"
+        android:ems="3"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtIdade"
+        android:layout_below="@id/txtIdade"
+        android:layout_alignLeft="@id/txtIdade"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso (kg):"
+        android:layout_below="@id/edtNome"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/edtIdade"
+        />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:ems="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPeso"
+        android:layout_alignLeft="@id/txtPeso"
+        />
+
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:layout_toRightOf="@id/edtPeso"
+        android:text="Altura (m):"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        />
+
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:ems="4"
+        android:layout_below="@id/txtAltura"
+        android:layout_alignLeft="@id/txtAltura"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relatório Nutricional"
+        android:id="@+id/btnRel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtPeso"
+        android:layout_marginTop="128dp"
+        android:onClick="clickRelatorio"
+        />
+
+</RelativeLayout>

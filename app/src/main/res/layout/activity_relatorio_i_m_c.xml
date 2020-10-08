@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelatorioIMC">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:text="Relatório Nutricional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLabelNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="48dp"
+        android:text="Nome:"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtLabelNome"
+        android:layout_toRightOf="@id/txtLabelNome"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLabelIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabelNome"
+        android:layout_alignLeft="@id/txtLabelNome"
+        android:text="Idade:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtLabelIdade"
+        android:layout_alignTop="@id/txtLabelIdade"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLabelPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabelIdade"
+        android:layout_alignLeft="@id/txtLabelIdade"
+        android:text="Peso:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtLabelPeso"
+        android:layout_toRightOf="@id/txtLabelPeso"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLabelAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabelPeso"
+        android:layout_alignLeft="@id/txtLabelPeso"
+        android:text="Altura:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtLabelAltura"
+        android:layout_toRightOf="@id/txtLabelAltura"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLabelIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabelAltura"
+        android:layout_alignLeft="@id/txtLabelAltura"
+        android:text="IMC:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtLabelIMC"
+        android:layout_toRightOf="@id/txtLabelIMC"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLabelClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabelIMC"
+        android:layout_alignLeft="@id/txtLabelIMC"
+        android:text="Classificação:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtLabelClass"
+        android:layout_toRightOf="@id/txtLabelClass"
+        android:layout_marginLeft="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDados"
+        android:text="Realizar novo Cálculo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtClass"
+        android:layout_marginTop="64dp"
+        />
+
+</RelativeLayout>
