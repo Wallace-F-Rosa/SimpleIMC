@@ -63,7 +63,9 @@ public class RelatorioIMC extends AppCompatActivity {
     }
 
     public void clickDados(View v){
-
+        Intent it = new Intent(getBaseContext(), DadosActivity.class);
+        it.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(it);
     }
 
     @Override
